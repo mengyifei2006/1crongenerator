@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRON Generator - Free Online CRON Expression Tool</title>
+    <meta name="description" content="Easily generate, test, and understand CRON expressions with our free online CRON generator. No more guesswork. Create complex server schedules in seconds.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYTRKJDL8J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XYTRKJDL8J');
+</script>
+<script async src=" `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1336697940295449` " 
+      crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Free Online CRON Generator</h1>
+        </header>
+
+        <main class="generator">
+            <div class="presets">
+                <button class="preset-btn" data-cron="* * * * *">Every Minute</button>
+                <button class="preset-btn" data-cron="*/5 * * * *">Every 5 Minutes</button>
+                <button class="preset-btn" data-cron="0 * * * *">Once an Hour</button>
+                <button class="preset-btn" data-cron="0 0 * * *">Once a Day</button>
+                <button class="preset-btn" data-cron="0 0 * * 0">Once a Week</button>
+                <button class="preset-btn" data-cron="0 0 1 * *">Once a Month</button>
+            </div>
+
+            <div class="output-container">
+                <input type="text" id="cron-output" readonly>
+                <button id="copy-btn">Copy to Clipboard</button>
+            </div>
+
+            <div class="advanced-settings">
+                <div class="cron-field">
+                    <label for="minute">Minute</label>
+                    <select id="minute"></select>
+                </div>
+                <div class="cron-field">
+                    <label for="hour">Hour</label>
+                    <select id="hour"></select>
+                </div>
+                <div class="cron-field">
+                    <label for="day-month">Day (of Month)</label>
+                    <select id="day-month"></select>
+                </div>
+                <div class="cron-field">
+                    <label for="month">Month</label>
+                    <select id="month"></select>
+                </div>
+                <div class="cron-field">
+                    <label for="day-week">Day (of Week)</label>
+                    <select id="day-week"></select>
+                </div>
+            </div>
+        </main>
+
+        <section class="content">
+            <h2>What is a CRON Expression?</h2>
+            <p>A CRON expression is a string that represents a schedule, used by a time-based job scheduler in Unix-like computer operating systems. This scheduler, known as cron, runs tasks (or "cron jobs") at specified intervals. These tasks can be anything from sending an email to backing up a database.</p>
+            <p>The expression consists of five fields (sometimes six), each representing a unit of time. The standard five-field format is what our generator focuses on. The fields are separated by spaces and represent: Minute, Hour, Day of Month, Month, and Day of Week. A simple expression like <code>* * * * *</code> means the job will run every minute of every hour of every day.</p>
+
+            <h2>How to Use This CRON Generator</h2>
+            <p>Our CRON Generator makes creating these schedules effortless. You can either use the quick presets like 'Every 5 Minutes' to instantly get a common expression, or use the advanced dropdowns to build your custom schedule. Simply select the desired value for each field—Minute, Hour, Day (Month), Month, and Day (Week). As you make changes, the CRON expression in the output box above will update in real-time. Once you have the perfect schedule, just click the "Copy to Clipboard" button.</p>
+
+            <h2>Common CRON Syntax Examples</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expression</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>*/5 * * * *</code></td>
+                        <td>Run every 5 minutes.</td>
+                    </tr>
+                    <tr>
+                        <td><code>0 9 * * 1</code></td>
+                        <td>Run at 9:00 AM every Monday.</td>
+                    </tr>
+                    <tr>
+                        <td><code>0 0 1 * *</code></td>
+                        <td>Run at midnight on the first day of every month.</td>
+                    </tr>
+                    <tr>
+                        <td><code>0 12 * * 1-5</code></td>
+                        <td>Run at 12:00 PM (noon) on every weekday (Monday to Friday).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>CRON Generator FAQ</h2>
+            <div class="faq">
+                <h3>What does the asterisk (*) mean?</h3>
+                <p>The asterisk is a wildcard character in CRON expressions, meaning "every" or "all". For example, an asterisk in the "Hour" field means the task will run every hour. An asterisk in all five fields means it runs every minute.</p>
+                <h3>What does the slash (/) mean?</h3>
+                <p>The slash is used to define step values or increments. It allows you to specify a range and an interval. For example, <code>*/10</code> in the minute field means "every 10 minutes" (at minutes 0, 10, 20, 30, 40, and 50).</p>
+                <h3>Is this CRON generator free?</h3>
+                <p>Yes, this tool is 100% free to use. There are no hidden costs or sign-ups required. Our goal is to provide a simple and effective tool for developers and system administrators.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
