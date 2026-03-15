@@ -60,6 +60,8 @@
       gtag('config', 'G-XYTRKJDL8J');
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1336697940295449" crossorigin="anonymous"></script>
+    <script>(function(s){s.dataset.zone='10735872',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <script>(function(s){s.dataset.zone='10735873',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -187,7 +189,7 @@
             <!-- Display Card (Cron) -->
             <div class="col-span-1 md:col-span-8 bg-white/80 backdrop-blur-xl rounded-[2rem] shadow-apple p-6 sm:p-10 flex flex-col justify-between border border-white relative overflow-hidden group">
                 <div class="absolute top-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <button @click="copyToClipboard" class="p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 transition-colors" title="Copy">
+                    <button @click="copyToClipboard; triggerAd()" class="p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 transition-colors" title="Copy">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
                     </button>
                 </div>
@@ -198,7 +200,7 @@
                 </div>
                 
                 <div class="mt-8 flex items-center gap-3">
-                     <button @click="copyToClipboard" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-2xl font-medium hover:bg-black transition-all btn-press shadow-lg shadow-slate-300/50">
+                     <button @click="copyToClipboard; triggerAd()" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-2xl font-medium hover:bg-black transition-all btn-press shadow-lg shadow-slate-300/50">
                         <span>Copy</span>
                         <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                     </button>
@@ -589,6 +591,10 @@
                     navigator.clipboard.writeText(this.cronExpression).then(() => {
                         window.dispatchEvent(new CustomEvent('show-toast', { detail: 'Copied to clipboard!' }));
                     });
+                },
+
+                triggerAd() {
+                    window.open('https://omg10.com/4/10735853', '_blank');
                 }
             }
         }
